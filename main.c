@@ -1,8 +1,8 @@
 /*
- * Binary_ATMEGA8.c
+ * Hex_atmega8.c
  *
- * Created: 2/19/2021 4:46:53 PM
- * Author : Sumit
+ * Created: 2/19/2021 4:52:39 PM
+ * Author : sumit
  */ 
 
 #include <avr/io.h>
@@ -10,14 +10,15 @@
 
 int main(void)
 {
-    DDRB = 0b11111111;
-	DDRC = 0b11111111;
-	DDRD = 0b11111111;
+    /* Replace with your application code */
+	DDRB = 0xFF;
+	DDRC = 0xFF;
+	DDRD = 0xFF;
     while (1) 
     {
-		PORTB = 0b10101111;
-		PORTC = 0b11111010;
-		PORTD = 0b00001111;
+		PORTC = 0xAB;
+		PORTD = 0xBA;
+		PORTB = 0x0A;
     }
 }
 
